@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Unibank</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="header-top">
+        <div class="container px-5">
+          <div class="row px-3">
+            <div class="col-lg-8 d-flex align-items-center">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="/images/logonew-orange1.png" alt="logo" />
+                </a>
+              </div>
+              <div class="navbar-menu">
+                <a href="#">F.A.Q</a>
+                <a href="/service-network.html">Xidmət şəbəkəsi</a>
+                <a href="#">Bank haqqında</a>
+                <a href="#">Keşbek</a>
+                <a href="#">Tariflər</a>
+                <a href="/hr.html">İnsan Resursları</a>
+                <a href="#">Bankla əlaqə və təkliflər</a>
+              </div>
+            </div>
+            <div class="col-lg-4 d-flex align-items-center">
+              <div class="banking-options d-flex me-3">
+                <button class="active">Fərdi</button>
+                <button>Biznes</button>
+              </div>
+              <button class="dark-mode me-3 mode-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-moon-stars-fill moon" viewBox="0 0 16 16">
+                  <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                  <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#323232" class="bi bi-brightness-high d-none sun" viewBox="0 0 16 16">
+                  <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                </svg>
+              </button>
+              <button class="me-3 langs">ENG</button>
+              <button class="me-3 langs">RUS</button>
+
+              <div class="cart-div">
+                <button class="me-3">
+                  <a href="/basket.html"><i class="fa-solid fa-cart-shopping" style="color: #ff6400;"></i></a>
+                </button>
+                <div class="count-adding-product d-none">
+                  <span class="count"></span>
+                </div>
+              </div>
+              
+
+              <button class="search-button">
+                <i
+                  class="fa-solid fa-magnifying-glass fa-flip-horizontal"
+                  style="color: #323232"
+                ></i>
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="searching d-none">
+        <div class="container">
+          <div class="row">
+            <div class="search-box">
+              <div class="d-flex justify-content-center align-items-center mt-5">
+                <i class="fa-solid fa-xmark fa-2xl close-button" style="color: #323232;"></i>
+              </div>
+              <div class="d-flex justify-content-center align-items-center my-5">
+                <h3>Axtarış</h3>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mb-5 inp-div m-auto">
+                <input type="text" class="w-100">
+                <button><i
+                  class="fa-solid fa-magnifying-glass fa-flip-horizontal"
+                  style="color: #ff6400"
+                ></i>
+              </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container px-5">
+          <div class="row py-4">
+            <div class="col-lg-9 d-flex align-items-center">
+              <a href="/cards.html">Kartlar</a>
+              <a href="#">Kreditlər</a>
+              <a href="#">Əmanətlər</a>
+              <a href="#">Köçürmələr</a>
+              <a href="#">Rəqəmsal bankçılıq</a>
+              <a href="#">Əlavə xidmətlər</a>
+            </div>
+
+            <div class="col-lg-3 buttons d-flex align-items-center">
+              <div class="me-2">
+                <a href="tel:117" class="call-center"><i class="fa-solid fa-phone me-2" style="color: #ff6b00"></i>117</a>
+              </div>
+              <div>
+                <a href="/internet-banking.html" target="_blank"><i class="fa-solid fa-circle-right me-2" style="color: #ff6b00"></i>İnternet bankçılıq</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-header">
+      <div class="container px-5">
+
+        <div class="row d-flex align-items-center justify-content-between py-3 position-relative">
+
+          <div class="col-4 col-lg-4 col-sm-4 col-md-4 d-flex justify-content-start align-items-center">
+            <button class="burger-menu">
+              <i class="fa-solid fa-bars-staggered" style="color: #323232;"></i>
+            </button>
+          </div>
+
+          <div class="col-4 col-lg-4 col-sm-4 col-md-4 d-flex justify-content-center align-items-center">
+            <a href="index.html">
+              <img src="/images/logonew-orange1.png" alt="logo" height="30px" width="30px"/>
+            </a>
+          </div>
+
+          <div class="col-4 col-lg-4 col-sm-4 col-md-4 d-flex justify-content-end align-items-center">
+            <div>
+              <a href="tel:117" class="call-center"><i class="fa-solid fa-phone me-2" style="color: #ff6b00"></i>117</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="opened-menu position-absolute d-flex justify-content-center w-100 d-none">
+          <div>
+            <div class="banking-options d-flex justify-content-center">
+              <button class="active">Fərdi</button>
+              <button>Biznes</button>
+            </div>
+            <div class="d-flex justify-content-center mh-top">
+              <a href="/cards.html">Kartlar</a>
+            </div>
+            <div class="d-flex justify-content-center mh-top">
+              <a href="#">Əmanətlər</a>
+            </div>
+            <div class="d-flex justify-content-center mh-top">
+              <a href="#">Köçürmələr</a>
+            </div>
+            <div class="d-flex justify-content-center mh-top">
+              <a href="#">Rəqəmsal bankçılıq</a>
+            </div>
+            <div class="d-flex justify-content-center mh-top">
+              <a href="#">Əlavə xidmətlər</a>
+            </div>
+            <div class="d-flex justify-content-center mh-bottom">
+              <a href="#">F.A.Q</a>
+            </div>
+            <div class="d-flex justify-content-center mh-bottom">
+              <a href="/service-network.html">Xidmət şəbəkəsi</a>
+            </div>
+            <div class="d-flex justify-content-center mh-bottom">
+              <a href="#">Bank haqqında</a>
+            </div>
+            <div class="d-flex justify-content-center mh-bottom">
+              <a href="#">Keşbek</a>
+            </div>
+            <div class="d-flex justify-content-center mh-bottom">
+              <a href="#">Tariflər</a>
+            </div>
+            <div class="d-flex justify-content-center mh-bottom">
+              <a href="/hr.html">İnsan Resursları</a>
+            </div>
+            <div class="d-flex justify-content-center mh-bottom">
+              <a href="#">Bankla əlaqə və təkliflər</a>
+            </div>
+
+            <div class="d-flex justify-content-between m-buttons align-items-center">
+
+              <button class="dark-mode me-3 mode-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-moon-stars-fill moon" viewBox="0 0 16 16">
+                  <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                  <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#323232" class="bi bi-brightness-high d-none sun" viewBox="0 0 16 16">
+                  <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                </svg>
+              </button>
+
+              <button class="search-button">
+                <i
+                  class="fa-solid fa-magnifying-glass fa-flip-horizontal"
+                  style="color: #323232"
+                ></i>
+              </button>
+
+              <button class="langs">ENG</button>
+
+              <button class="langs">RUS</button>
+
+              <div class="cart-div">
+                <button class="me-3">
+                  <a href="/basket.html"><i class="fa-solid fa-cart-shopping" style="color: #ff6400;"></i></a>
+                </button>
+                <div class="count-adding-product d-none">
+                  <span class="count"></span>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+      </div>
+    </header>
+    
+    <div class="service-network">
+      <div class="container px-5">
+
+          <div class="row">
+            <div class="col-lg-12">
+              <h1>İnsan resursları</h1>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="branch-options d-flex align-items-center gap-4">
+
+                <div class="active-br-option br-ops">
+                  <h6>Ümumi məlumat</h6>
+                  <div class="full-triangle path1"></div>
+                  <div class="border-triangle path2"></div>
+                </div>
+
+                <div class="br-ops">
+                  <h6>Vakansiyalar</h6>
+                  <div></div>
+                  <div></div>
+                </div>
+
+                <div class="br-ops">
+                  <h6>Unibankda çalışmaq</h6>
+                  <div></div>
+                  <div></div>
+                </div>
+
+                <div class="br-ops">
+                  <h6>İşə qəbul prosesi</h6>
+                  <div></div>
+                  <div></div>
+                </div>
+
+                <div class="br-ops">
+                  <h6>Təlim və inkişaf</h6>
+                  <div></div>
+                  <div></div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="video">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#ffffff" class="bi bi-play-circle play-button" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                </svg>
+                <iframe class="hr-video" width="560" height="315" src="https://www.youtube.com/embed/ricGtmUDcLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-4">
+              <div class="hr-box text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#ff6400" class="bi bi-person-vcard" viewBox="0 0 16 16">
+                  <path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5ZM9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8Zm1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Z"/>
+                  <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12V4Z"/>
+                </svg>
+                <h4 class="my-4">Vakansiyalar</h4>
+                <div>
+                  <p>Unibankda əllidən çox karyera istiqaməti mövcuddur. Hazırda mövcud vakansiyalar barədə ətraflı məlumat əldə edin.</p>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="hr-box text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#ff6400" class="bi bi-people-fill" viewBox="0 0 16 16">
+                  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                </svg>
+                <h4 class="my-4">Unibankda çalışmaq</h4>
+                <div>
+                  <p>
+                    Ölkənin ən nüfuzlu şirkətlərindən birində çalışmaq, öz karyera arzularını reallaşdırmaq istəyirsənsə - Unibank məhz sənin bankındır! Gələcək inkişafını Unibankla başla! </p>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="hr-box text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#ff6400" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                  <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                  <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                </svg>
+                <h4 class="my-4">İşə qəbul prosesi</h4>
+                <div>
+                  <p>
+                    Müraciət etdiyiniz vakansiyadan asılı olaraq işə qəbul prosesimiz fərqlənə bilər. Test mərhələsində sizi nələr gözlədiyini və müsahibələrdə hansı məqamlara diqqət yetirməli olduğunuzu öyrənin. </p>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="hr-box text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#ff6400" class="bi bi-book" viewBox="0 0 16 16">
+                  <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                </svg>
+                <h4 class="my-4">Təlim və İnkişaf</h4>
+                <div>
+                  <p>Karyera və iş həyatınız boyu Təlim və İnkişaf Mərkəzi əsas dostunuz və yol yoldaşınız olacaq!</p>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="hr-box text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#ff6400" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                  <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                  <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                </svg>
+                <h4 class="my-4">Təcrübə proqramları</h4>
+                <div>
+                  <p>
+                    Təcrübə proqramları müxtəlif istiqamətlərdə və müxtəlif müddətlərdə olur. Təcrübə müddəti maksimal olaraq üç ay ərzində keçirilir.</p>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="hr-box text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#ff6400" class="bi bi-signpost-2" viewBox="0 0 16 16">
+                  <path d="M7 1.414V2H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h5v1H2.5a1 1 0 0 0-.8.4L.725 8.7a.5.5 0 0 0 0 .6l.975 1.3a1 1 0 0 0 .8.4H7v5h2v-5h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H9V6h4.5a1 1 0 0 0 .8-.4l.975-1.3a.5.5 0 0 0 0-.6L14.3 2.4a1 1 0 0 0-.8-.4H9v-.586a1 1 0 0 0-2 0zM13.5 3l.75 1-.75 1H2V3h11.5zm.5 5v2H2.5l-.75-1 .75-1H14z"/>
+                </svg>
+                <h4 class="my-4">İstiqamətlər</h4>
+                <div>
+                  <p>
+                    Karyeranızı məhz bank sektorunda qurmaq istəyir, öz gücünüzə və potensialınıza inanırsınızsa, Unibank Sizi öz karyera seçiminizi etməyə dəvət edir.</p>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="board-box">
+                <img src="/images/eldar.jpg"  width="106px" height="106px" alt="photo">
+                <h4 class="my-1">Eldar Qəribov</h4>
+                <span>Müşahidə Şurasının sədri</span>
+                <div class="mt-2">
+                  <p>Unibankda gənc mütəxəssislərin özlərini reallaşdırmaları, peşə vərdişlərini, ixtisaslarını artırmaları üçün hər cür şərait yaradılıb. İllər boyu Unibank minlərlə əməkdaşın təkcə iş yeri deyil, həm də onların Məktəbi və İnkişaf Mərkəzi olub. Məhz biz səhmdarlar üçün şirkətin əsas dəyəri onun İnsan Kapitalı, Komandasıdır.</p>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="board-box">
+                <img src="/images/faiq.jpg"  width="106px" height="106px" alt="photo">
+                <h4 class="my-1">Faiq Hüseynov</h4>
+                <span>Müşahidə Şurası sədrinin müavini</span>
+                <div class="mt-2">
+                  <p>Unibank həmişə gənc mütəxəssislər üçün uğurlu karyera ünvanı, inkişaf məkanı olub. Fəaliyyət göstərdiyi otuz ildən artıq dövrdə Unibank məktəbində yetişmiş minlərlə kadr, bu gün bank sektorunun uğurlu, bacarıqlı mütəxəssisləridir. Bankın işçi heyətinin davamlı inkişafı, komanda ruhunun gücləndirilməsi rəhbərlik üçün hər zaman prioritet vəzifələrdən biridir.</p>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <div class="about">
+                <h1>Haqqımızda</h1>
+                <div>
+                  <p>Unibank yarandığı ilk gündən etibarən insan resurslarının inkişafını əsas prioritetlərdən biri kimi qəbul etmişdir. Ümumilikdə bank öz əməkdaşlarına resurs deyil, kapital kimi baxmasına üstünlük verir. Məhz bizim komandamız bizim əsas kapitalımız və dəyərimizdir. İllər boyu formalaşan bu dəyər Unibank dəfələrlə ölkənin bank bazarıda müxtəlif istiqamətlərdə birincilər sırasına gətirmişdir. Əsas qazancımız isə bir daha insan kapitalımızın verdiyi dəyər olub.</p>
+                </div>
+                <div>
+                  <p>
+                    Unibank insan kapitalına dair öz strategiyasını əməkdaşın ilk günündən, habelə təcrübə proqramından başlayaraq start verərək, onun sonraki karyera inkişafını planlayır. Müxtəlif vəzifələr üzrə karyera inkişafı planlaşdırılması, o cümlədən əməkdaşların şəxsi və profesional kompetensiyaların artırılması istiqamətində təlim və inkişafı, o cümlədən onların liderlik və idarə etmə kimi bacarıqlarının inkişafıda əsas prioritetlərimizdən biridir. Daxili talantların idarə edilməsi və tanınması, onların bankdaxili rotasiyalar vasitəsilə inkişaf etdirilməsidə Unibankın insan kapitalının inkişafı üzrə əsas məqamlarındandır. İnsan Kapitalı Bankın <span>2017-2019</span> cu illəri əks etdirən Strateji Planımızda belə əsas strateji hədəflərindən biri kimi səhmdarlar tərəfindən qəbul edilmişdir.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="done-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#ffffff" class="bi bi-check-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                </svg>
+                <div>
+                  <p>Biliyinizi genişləndirmək üçün hədsiz imkanlar</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="done-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#ffffff" class="bi bi-check-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                </svg>
+                <div>
+                  <p>Güclü komandanın bir parçası olmaq</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="done-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#ffffff" class="bi bi-check-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                </svg>
+                <div>
+                  <p>Bank Məktəbində çalışmaq imkanı</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="done-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#ffffff" class="bi bi-check-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                </svg>
+                <div>
+                  <p>Ölkənin aparıcı şirkətlərindən birində uğur yolunuzun binövrəsini qurmaq</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <h1 class="my-4">Dəyərlərimiz</h1>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="our-values">
+                <h4>Etibarlılıq</h4>
+                <div>
+                  <p>Ölkəmiz, müştərilərimiz, partnyorlarımız, işçilərimiz üçün daim etibarlı bank olmaq bizim dəyərlərimizdən biridir.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="our-values">
+                <h4>İnnovativlik</h4>
+                <div>
+                  <p>Müştərilərimizin vaxtına qənaət edərək, onlara innovativ məhsul və xidmətləri təklif etməklə, dəyərlərinə dəyər qatmaq əsas prioritetlərimizdəndir. Biz inkişafın nəbzini tuturuq!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="our-values">
+                <h4>Bank Məktəbi</h4>
+                <div>
+                  <p>Otuz ildən artıq fəaliyyətimiz dövründə bank sektoruna minlərlə peşəkar bank işçisi verməyimiz, insan kapitalını hər zaman ön planda tutmağımızla qürur duyuruq!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="our-values">
+                <h4>Komanda</h4>
+                <div>
+                  <p>Hədəflərimizə doğru daim bir komanda ruhunda çalışmaq, səmimi, hər kəs üçün faydalı, ailə dəyərlərinə malik komanda olmaqda davam etmək, əsas vəzifələrimizdəndir.Biz komandamızın qələbəsinə inanırıq!</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+    </div>
+
+    <footer>
+      <div class="container px-5">
+        <div class="row">
+          <div class="col-lg-6 mb-5 mf-none">
+            <div class="row">
+              <div class="col-lg-3">
+                <h6>Kartlar</h6>
+                <ul>
+                  <li>
+                    <a href="/cards.html">Kartlar</a>
+                  </li>
+                  <li>
+                    <a href="/cards.html">Debet kartlar</a>
+                  </li>
+                  <li>
+                    <a href="/cards.html">Digər</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <h6>Kreditlər</h6>
+                <ul>
+                  <li>
+                    <a href="">Nağd</a>
+                  </li>
+                  <li>
+                    <a href="">Mikro</a>
+                  </li>
+                  <li>
+                    <a href="">İpoteka</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <h6>Əmanətlər</h6>
+                <ul>
+                  <li>
+                    <a href="">Müddətli</a>
+                  </li>
+                  <li>
+                    <a href="">Proqressiv</a>
+                  </li>
+                  <li>
+                    <a href="">Yığım</a>
+                  </li>
+                  <li>
+                    <a href="">Faizlər əvvəlcədən</a>
+                  </li>
+                  <li>
+                    <a href="">Topla</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <h6>Köçürmələr</h6>
+                <ul>
+                  <li>
+                    <a href="">Ölkəxarici</a>
+                  </li>
+                  <li>
+                    <a href="">Ölkədaxili</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+          <div class="col-lg-6 mb-5 mf-none">
+            <div class="row">
+              <div class="col-lg-4">
+                <h6>Rəqəmsal bankçılıq</h6>
+                <ul>
+                  <li>
+                    <a href="">UBank</a>
+                  </li>
+                  <li>
+                    <a href="">İnternet bankçılıq</a>
+                  </li>
+                  <li>
+                    <a href="">Şəxsi kabinet</a>
+                  </li>
+                  <li>
+                    <a href="">Unimiles şəxsi kabinet</a>
+                  </li>
+                  <li>
+                    <a href="">Onlayn kredit ödənişi</a>
+                  </li>
+                  <li>
+                    <a href="">Onlayn kredit müraciəti</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <h6>Əlavə xidmətlər</h6>
+                <ul>
+                  <li>
+                    <a href="">Hesablaşma-kassa xidməti</a>
+                  </li>
+                  <li>
+                    <a href="">POS terminal / Smart kassa</a>
+                  </li>
+                  <li>
+                    <a href="">Depozit qutuları</a>
+                  </li>
+                  <li>
+                    <a href="">Onlayn ticarət (eCommerce)</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <h6>Bank haqqında</h6>
+                <ul>
+                  <li>
+                    <a href="">Rəhbərlik</a>
+                  </li>
+                  <li>
+                    <a href="">Müxbir hesablar</a>
+                  </li>
+                  <li>
+                    <a href="">Təklif və Şikayətlər</a>
+                  </li>
+                  <li>
+                    <a href="">İnsan resursları</a>
+                  </li>
+                  <li>
+                    <a href="">Hesabatlar</a>
+                  </li>
+                  <li>
+                    <a href="">Digər sənədlər</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="icons d-flex gap-4 align-items-center">
+            <div class="icon d-flex align-items-center justify-content-center orange-div">
+              <i class="fa-brands fa-apple" style="color: #ffffff;"></i>
+            </div>
+            <div class="icon d-flex align-items-center justify-content-center orange-div">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-android2" viewBox="0 0 16 16">
+                <path d="m10.213 1.471.691-1.26c.046-.083.03-.147-.048-.192-.085-.038-.15-.019-.195.058l-.7 1.27A4.832 4.832 0 0 0 8.005.941c-.688 0-1.34.135-1.956.404l-.7-1.27C5.303 0 5.239-.018 5.154.02c-.078.046-.094.11-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.697 3.697 0 0 0 3.5 5.02h9c0-.75-.208-1.44-.623-2.072a4.266 4.266 0 0 0-1.664-1.476ZM6.22 3.303a.367.367 0 0 1-.267.11.35.35 0 0 1-.263-.11.366.366 0 0 1-.107-.264.37.37 0 0 1 .107-.265.351.351 0 0 1 .263-.11c.103 0 .193.037.267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264Zm4.101 0a.351.351 0 0 1-.262.11.366.366 0 0 1-.268-.11.358.358 0 0 1-.112-.264c0-.103.037-.191.112-.265a.367.367 0 0 1 .268-.11c.104 0 .19.037.262.11a.367.367 0 0 1 .107.265c0 .102-.035.19-.107.264ZM3.5 11.77c0 .294.104.544.311.75.208.204.46.307.76.307h.758l.01 2.182c0 .276.097.51.292.703a.961.961 0 0 0 .7.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182c0 .276.097.51.292.703a.972.972 0 0 0 .71.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76c.291 0 .54-.103.749-.308.207-.205.311-.455.311-.75V5.365h-9v6.404Zm10.495-6.587a.983.983 0 0 0-.702.278.91.91 0 0 0-.293.685v4.063c0 .271.098.501.293.69a.97.97 0 0 0 .702.284c.28 0 .517-.095.712-.284a.924.924 0 0 0 .293-.69V6.146a.91.91 0 0 0-.293-.685.995.995 0 0 0-.712-.278Zm-12.702.283a.985.985 0 0 1 .712-.283c.273 0 .507.094.702.283a.913.913 0 0 1 .293.68v4.063a.932.932 0 0 1-.288.69.97.97 0 0 1-.707.284.986.986 0 0 1-.712-.284.924.924 0 0 1-.293-.69V6.146c0-.264.098-.491.293-.68Z"/>
+              </svg>
+            </div>
+            <div class="icon d-flex align-items-center justify-content-center">
+              <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+            </div>
+            <div class="icon d-flex align-items-center justify-content-center">
+              <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+            </div>
+            <div class="icon d-flex align-items-center justify-content-center">
+              <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+            </div>
+            <div class="icon d-flex align-items-center justify-content-center">
+              <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+            </div>
+            <div class="icon d-flex align-items-center justify-content-center">
+              <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            </div>
+            <div class="icon d-flex align-items-center justify-content-center">
+              <i class="fa-brands fa-telegram" style="color: #ffffff;"></i>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-between py-4">
+            <div class="copyright col-lg-8">
+              <p class="cr-top">© 2023, Unibank - Sənin Bankın</p>
+              <p class="cr-bottom">Unibank Azərbaycan Respublikası Mərkəzi Bankının 73 saylı 14 dekabr 2010-cu il tarixli lisenziyası əsasında fəaliyyət göstərir.</p>
+              <p class="cr-bottom">Bütün hüquqlar qorunur.</p>
+            </div>
+            <div class="logos col-lg-4 d-flex align-items-center justify-content-between ">
+                <a href="">
+                  <img src="/images/adif.png" alt="">
+                </a>
+                <a href="">
+                  <img src="/images/Elektron-hokumet-1.jpg" alt="">
+                </a>
+                <a href="">
+                  <img src="/images/infobank.png" alt="">
+                </a>
+                <a href="">
+                  <img src="/images/msp.png" alt="">
+                </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+    <script src="/hr.js"></script>
+    <script src="/basket.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

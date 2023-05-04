@@ -1,0 +1,1287 @@
+body {
+  overflow-x: hidden !important;
+}
+body header a {
+  text-decoration: none;
+}
+body header .header-top {
+  background-color: #fafafa;
+  padding: 10px 0;
+}
+body header .header-top .cart-div {
+  position: relative;
+}
+body header .header-top .cart-div .count-adding-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+  border-radius: 100%;
+  background-color: #ff6400;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 19px;
+  left: 17px;
+}
+body header .header-top .logo img {
+  width: 27px;
+  margin-right: 40px;
+}
+body header .header-top .navbar-menu a {
+  color: #323232;
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Coco-Sharp-Regular;
+}
+body header .header-top button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 8px 10px;
+}
+body header .header-top .banking-options button {
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 8px 18px;
+}
+body header .header-top .dark-mode {
+  background-color: #323232;
+}
+body header .header-top .active {
+  color: #ff7a00;
+  border: #ff7a00 1px solid;
+}
+body header .header-top .langs {
+  font-family: Coco-Sharp-Bold;
+}
+body header .searching {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  z-index: 99;
+}
+body header .searching .search-box .inp-div {
+  border: 1px solid #eaeaea;
+  border-radius: 20px;
+  width: 50%;
+  padding: 10px;
+}
+body header .searching .search-box h3 {
+  font-family: Coco-Sharp-Regular;
+  font-size: 22px;
+  font-weight: 400px;
+}
+body header .searching .search-box input {
+  border: none;
+}
+body header .searching .search-box input:focus {
+  outline: none !important;
+}
+body header .searching .search-box button {
+  background-color: transparent;
+  border: none;
+}
+body header .searching .close-button {
+  cursor: pointer;
+}
+body header .header-bottom a {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Coco-Sharp-Bold;
+  margin-right: 30px;
+}
+body header .header-bottom .buttons div {
+  border: 1px #f2f2f2 solid;
+  padding: 10px 15px;
+  border-radius: 20px;
+  display: flex;
+}
+body header .header-bottom .buttons a {
+  font-size: 16px;
+  margin: 0;
+}
+body header .header-bottom .buttons .call-center {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body header .mobile-header {
+  display: none;
+}
+body header .mobile-header .burger-menu {
+  border: none;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+body header .mobile-header .call-center {
+  background-color: #efefef;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #323232;
+}
+body header .mobile-header .active {
+  color: #ff7a00;
+  border: #ff7a00 1px solid !important;
+}
+body header .mobile-header .opened-menu {
+  position: absolute;
+  top: 9%;
+  z-index: 9999999;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fafafa;
+  padding-top: 20px;
+}
+body header .mobile-header .opened-menu .banking-options button {
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 8px 18px;
+  border: none;
+}
+body header .mobile-header .opened-menu .mh-top a {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Coco-Sharp-Bold;
+  margin-top: 5px;
+}
+body header .mobile-header .opened-menu .mh-bottom a {
+  color: #808080;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 5px;
+  font-family: Coco-Sharp-Regular;
+}
+body header .mobile-header .opened-menu .m-buttons {
+  margin-top: 10px;
+}
+body header .mobile-header .opened-menu .m-buttons button {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  gap: 5px;
+}
+body header .mobile-header .opened-menu .dark-mode {
+  background-color: #323232 !important;
+}
+body main .slider-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff6400;
+  height: 400px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+body main .slider-box .slider {
+  width: 80%;
+  height: 400px;
+  overflow: hidden;
+}
+body main .slider-box .slider .slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+body main .slider-box .slider .slides input {
+  display: none;
+}
+body main .slider-box .slider .slides .slided-image {
+  height: 100%;
+}
+body main .slider-box .slider .slides .slided-text {
+  color: #ffffff;
+  padding-right: 50px;
+}
+body main .slider-box .slider .slides .slided-text h1 {
+  font-family: Coco-Sharp-Bold;
+  font-size: 34px;
+  font-weight: 900;
+}
+body main .slider-box .slider .slides .slided-text .text-div {
+  height: 100px;
+  margin-top: 20px;
+}
+body main .slider-box .slider .slides .slided-text .text-div p {
+  font-size: 14px;
+  font-weight: 200;
+}
+body main .slider-box .slider .slides .slided-text button {
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+body main .slider-box .slider .slides #radio1:checked ~ .first {
+  margin-left: 0;
+}
+body main .slider-box .slider .slides #radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: #ff6400;
+}
+body main .slider-box .slider .slides #radio2:checked ~ .first {
+  margin-left: -20%;
+}
+body main .slider-box .slider .slides #radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: #ff6400;
+}
+body main .slider-box .slider .slides #radio3:checked ~ .first {
+  margin-left: -40%;
+}
+body main .slider-box .slider .slides #radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: #ff6400;
+}
+body main .slider-box .slider .slides #radio4:checked ~ .first {
+  margin-left: -60%;
+}
+body main .slider-box .slider .slides #radio4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: #ff6400;
+}
+body main .slider-box .slider .slides #radio5:checked ~ .first {
+  margin-left: -80%;
+}
+body main .slider-box .slider .slides #radio5:checked ~ .navigation-auto .auto-btn5 {
+  background-color: #ff6400;
+}
+body main .slider-box .slider .slides .slide {
+  width: 20%;
+  transition: 0.5s;
+}
+body main .slider-box .slider .slides .slide img {
+  width: 400px;
+  height: 420px;
+}
+body main .slider-box .slider .slides .navigation-auto {
+  position: absolute;
+  width: 800px;
+  margin-top: 420px;
+  display: flex;
+  left: 50%;
+  transform: translateX(-60px);
+}
+body main .slider-box .slider .slides .navigation-auto div {
+  background-color: #e6e6e6;
+  padding: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body main .slider-box .slider .slides .navigation-auto div:not(:last-child) {
+  margin-right: 20px;
+}
+body main .slider-box .slider .navigation-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: 20px;
+  display: flex;
+  left: 50%;
+  transform: translateX(-60px);
+}
+body main .slider-box .slider .navigation-manual .manual-btn {
+  background-color: transparent;
+  padding: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body main .slider-box .slider .navigation-manual .manual-btn:not(:last-child) {
+  margin-right: 20px;
+}
+body main .box {
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 50px;
+  text-align: center;
+}
+body main .box h5 {
+  font-family: Coco-Sharp-Bold;
+  font-size: 18px;
+  font-weight: 700;
+}
+body main .box h2 {
+  font-size: 52px;
+  font-weight: 700;
+  color: #ff6400;
+}
+body main .box p {
+  font-family: Coco-Sharp-Regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+body main .box button {
+  background-color: #ff6400;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 50px;
+  font-size: 14px;
+  font-family: Coco-Sharp-Bold;
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 30px;
+}
+body main .ucard {
+  background-color: #fafafa;
+  margin-top: 80px;
+  border-radius: 8px;
+  padding: 100px 0;
+}
+body main .ucard .ucard-img {
+  position: relative;
+}
+body main .ucard .ucard-img img {
+  height: 495px;
+  position: absolute;
+  top: -262px;
+  left: 6px;
+}
+body main .ucard h1 {
+  font-family: Coco-Sharp-Extra-Bold;
+  color: #ff6400;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 28px;
+}
+body main .ucard p {
+  font-size: 14px;
+  font-weight: 300;
+}
+body main .ucard button {
+  border-radius: 30px;
+  border: 1px #e1e1e1 solid;
+  background-color: transparent;
+  color: #969696;
+  padding: 10px 25px;
+  margin-right: 10px;
+  font-family: Coco-Sharp-Bold;
+  font-size: 14px;
+  font-weight: 600;
+}
+body main .ucard .about-button {
+  background-color: #ff6400;
+  border: none;
+  color: #ffffff;
+}
+body main .ubank {
+  background-color: #fafafa;
+  margin: 40px 0;
+  border-radius: 8px;
+  padding: 75px;
+  position: relative;
+}
+body main .ubank .ubank-box h1 {
+  font-family: Coco-Sharp-Extra-Bold;
+  color: #ff6400;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 28px;
+}
+body main .ubank .ubank-box p {
+  font-size: 14px;
+  font-weight: 300;
+}
+body main .ubank .ubank-box button {
+  background-color: #ff6400;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 50px;
+  font-size: 14px;
+  font-family: Coco-Sharp-Bold;
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 20px;
+}
+body main .ubank .ubank-box img {
+  margin: 30px 10px 20px 0;
+}
+body main .ubank .app-img img {
+  height: 495px;
+  position: absolute;
+  bottom: 0%;
+}
+body main .exchange-rates {
+  background-color: #fafafa;
+  margin: 40px 0;
+  border-radius: 8px;
+  padding: 50px 50px 20px 50px;
+}
+body main .exchange-rates h1 {
+  font-family: Coco-Sharp-Extra-Bold;
+  color: #ff6400;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+body main .exchange-rates h5 {
+  font-family: Coco-Sharp-Bold;
+  font-size: 18px;
+  font-weight: 700;
+}
+body main .exchange-rates p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #9d9d9d;
+}
+body main .exchange-rates table {
+  border-collapse: collapse;
+  width: 80%;
+}
+body main .exchange-rates th,
+body main .exchange-rates td {
+  padding: 10px;
+  text-align: left;
+}
+body main .exchange-rates th {
+  font-family: Coco-Sharp-Regular;
+  font-size: 12px;
+  font-weight: 400;
+  color: #c8cdcf;
+  border-bottom: 1px solid #c8cdcf;
+}
+body main .exchange-rates td {
+  color: #323232;
+  font-size: 14px;
+  font-weight: 700;
+}
+body main .exchange-rates .inpdiv {
+  border: 2px solid #f4f4f4;
+  border-radius: 8px;
+  padding: 20px 30px;
+  width: 300px;
+}
+body main .exchange-rates .inpdiv input {
+  font-size: 18px;
+  width: 60%;
+  border: none;
+}
+body main .exchange-rates .inpdiv input:focus {
+  border: none;
+  outline: none;
+}
+body main .exchange-rates .inpdiv input::-webkit-outer-spin-button, body main .exchange-rates .inpdiv input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+body main .exchange-rates .inpdiv .exchange-dropdown {
+  position: relative;
+}
+body main .exchange-rates .inpdiv .exchange-dropdown .exchange-select {
+  width: 80px;
+  cursor: pointer;
+}
+body main .exchange-rates .inpdiv .exchange-dropdown .caret {
+  margin-left: 10px;
+  transition: 0.1s;
+}
+body main .exchange-rates .inpdiv .exchange-dropdown .caret-rotate {
+  transform: rotate(180deg);
+  margin-left: 10px;
+}
+body main .exchange-rates .inpdiv .exchange-dropdown .exchange-menu {
+  list-style: none;
+  padding: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  width: 82px;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: none;
+  opacity: 0;
+  transition: 0.2s;
+  z-index: 1;
+}
+body main .exchange-rates .inpdiv .exchange-dropdown .exchange-menu li {
+  padding: 3px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+body main .exchange-rates .inpdiv .exchange-dropdown .exchange-menu li:hover {
+  color: #ffffff;
+  background-color: #5896fb;
+}
+body main .exchange-rates .inpdiv .exchange-dropdown .exchange-menu .active-currency {
+  background-color: #dddddd;
+}
+body main .exchange-rates .inpdiv .exchange-dropdown .exchange-menu-open {
+  display: block;
+  opacity: 1;
+}
+body main .news-box {
+  width: 32%;
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+body main .news-box:hover {
+  background-color: #ff6400;
+}
+body main .news-box:hover h6,
+body main .news-box:hover p {
+  color: #ffffff;
+}
+body main .news-box h6 {
+  font-size: 16px;
+  color: #ff6400;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+body main .news-box p {
+  font-size: 14px;
+  font-weight: 200;
+  color: #737373;
+}
+body main .all-news button {
+  background-color: #ff6400;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-family: Coco-Sharp-Bold;
+  color: #ffffff;
+  font-weight: 700;
+}
+body main .info-box {
+  background-color: #fafafa;
+  padding: 50px 0 0 50px;
+  border-radius: 8px;
+}
+body main .info-box h1 {
+  font-family: Coco-Sharp-Bold;
+  color: #ff6400;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 28px;
+}
+body main .info-box p {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+body main .info-box button {
+  background-color: #ff6400;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 50px;
+  font-size: 14px;
+  font-family: Coco-Sharp-Bold;
+  color: #ffffff;
+  font-weight: 700;
+}
+body main .right-box {
+  width: 38%;
+  background-image: url(/images/callcenter.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body main .right-box div {
+  width: 60%;
+}
+body footer {
+  margin-top: 100px;
+}
+body footer h6 {
+  font-family: Coco-Sharp-Bold;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+body footer p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+body footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+body footer ul a {
+  font-family: Coco-Sharp-Regular;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+}
+body footer ul li {
+  margin-left: 0;
+  list-style-position: inside;
+  line-height: 35px;
+}
+body footer .icons {
+  padding: 20px 0;
+  border-bottom: 1px solid #ebeced;
+}
+body footer .icons .icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-color: #a1a1a1;
+}
+body footer .icons .orange-div {
+  background-color: #ff6400;
+}
+body footer .copyright p {
+  font-size: 12px;
+}
+body footer .copyright .cr-top {
+  font-weight: 400;
+}
+body footer .copyright .cr-bottom {
+  font-weight: 200;
+  line-height: 0;
+}
+body footer .logos img {
+  height: 45px;
+  width: auto;
+}
+body .cards h1 {
+  font-family: Coco-Sharp-Extra-Bold;
+  color: #ff6400;
+  font-size: 32px;
+  font-weight: 800;
+}
+body .cards button {
+  background-color: #ff6400;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 50px;
+  font-size: 14px;
+  font-family: Coco-Sharp-Bold;
+  color: #ffffff;
+  font-weight: 700;
+}
+body .cards h2 {
+  font-family: Coco-Sharp-Extra-Bold;
+  font-weight: 800;
+  font-size: 24px;
+}
+body .cards p {
+  font-family: Coco-Sharp-Regular;
+  font-weight: 400;
+  font-size: 14px;
+}
+body .cards .ucard-content {
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 50px;
+  margin: 30px 0;
+}
+body .cards .ucard-content .ucard-photo img {
+  height: 200px;
+  width: 100%;
+}
+body .cards .ucard-content .ucard-info {
+  margin-right: 100px;
+}
+body .cards .ucard-content .ucard-info h6 {
+  font-size: 16px;
+  font-weight: 600;
+}
+body .cards .debet-cards {
+  margin: 30px 0;
+}
+body .cards .debet-cards .card-box {
+  background-color: #fafafa;
+  padding: 50px 80px;
+  border-radius: 8px;
+}
+body .cards .debet-cards .card-box .card-info {
+  height: 150px;
+  margin: 50px 0 10px 0;
+}
+body .cards .debet-cards .card-box .card-info h3 {
+  font-style: italic;
+}
+body .cards .debet-cards .card-box button {
+  margin: 0;
+}
+body .cards .debet-cards .card-box img {
+  width: 315px;
+  border-radius: 15px;
+}
+body .cards .alertbox {
+  width: 20%;
+  background-color: #ff6400;
+  border: 1px solid #dddddd;
+  color: #dddddd;
+  padding: 10px;
+  position: fixed;
+  z-index: 3;
+  bottom: 10px;
+  right: -50%;
+  transition: all 0.5s ease;
+  border-radius: 20px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body .empty-cart img {
+  width: 100%;
+}
+body .empty-cart h1 {
+  font-family: Coco-Sharp-Bold;
+  color: #ff6400;
+  font-size: 40px;
+  font-weight: 800;
+}
+body .empty-cart p {
+  font-family: Coco-Sharp-Regular;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+body .empty-cart button {
+  background-color: #ff6400;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 50px;
+  font-size: 14px;
+  font-family: Coco-Sharp-Bold;
+  color: #ffffff;
+  font-weight: 700;
+}
+body .service-network h1 {
+  font-family: Coco-Sharp-Extra-Bold;
+  color: #ff6400;
+  font-size: 32px;
+  font-weight: 800;
+}
+body .service-network .branch-options {
+  margin: 20px 0 50px 0;
+}
+body .service-network .branch-options .active-br-option {
+  border-color: #ff6400;
+}
+body .service-network .branch-options .active-br-option h6 {
+  color: #ff6400 !important;
+}
+body .service-network .branch-options > div {
+  border: 2px solid #a1a1a1;
+  border-radius: 30px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: #ffffff;
+}
+body .service-network .branch-options > div .full-triangle {
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+          clip-path: polygon(50% 100%, 0 0, 100% 0);
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 14px;
+  background-color: #ffffff;
+}
+body .service-network .branch-options > div .border-triangle {
+  position: absolute;
+  -webkit-clip-path: polygon(0% 0%, 50% 100%, 50% 80%, 10% 0, 39% 0, 57% 0, 90% 0, 50% 80%, 50% 100%, 100% 0%);
+          clip-path: polygon(0% 0%, 50% 100%, 50% 80%, 10% 0, 39% 0, 57% 0, 90% 0, 50% 80%, 50% 100%, 100% 0%);
+  background-color: #ff6400;
+  top: 57px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 38px;
+  height: 14px;
+}
+body .service-network .branch-options > div h6 {
+  font-family: Coco-Sharp-Bold;
+  color: #a1a1a1;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+body .service-network .map {
+  background-color: #a1a1a1;
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+body .service-network .clicked-branch {
+  background-color: #ff6400 !important;
+  color: #ffffff;
+}
+body .service-network .clicked-branch i {
+  color: #ffffff !important;
+}
+body .service-network .branches {
+  background-color: #fafafa;
+  margin-top: 20px;
+  padding: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body .service-network .branches:hover {
+  background-color: #ff6400;
+  color: #ffffff;
+}
+body .service-network .branches:hover i {
+  color: #ffffff !important;
+}
+body .service-network .branches div {
+  width: 320px;
+}
+body .service-network .branches div h6 {
+  font-size: 20px;
+  font-weight: 700;
+}
+body .service-network .branches div p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+body .service-network .branch-info {
+  background-color: #ff6400;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 20px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+body .service-network .branch-info p {
+  margin: 0;
+}
+body .video {
+  background-image: url(/images/videobg.webp);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 80px;
+  position: relative;
+}
+body .video svg {
+  cursor: pointer;
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body iframe {
+  height: 300px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  opacity: 0;
+  visibility: hidden;
+}
+body .hr-box {
+  background-color: #fafafa;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 30px 60px;
+  margin-bottom: 20px;
+}
+body .hr-box:hover {
+  background-color: #ff6400;
+  color: #ffffff;
+}
+body .hr-box:hover svg {
+  fill: #ffffff !important;
+}
+body .hr-box h4 {
+  font-family: Coco-Sharp-Bold;
+  font-weight: 700;
+  font-size: 20px;
+}
+body .hr-box div {
+  height: 150px;
+}
+body .hr-box div p {
+  font-family: Coco-Sharp-Regular;
+  font-weight: 400;
+  font-size: 14px;
+}
+body .board-box {
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 30px 60px;
+  margin-bottom: 20px;
+}
+body .board-box h4 {
+  font-family: Coco-Sharp-Bold;
+  font-weight: 700;
+  font-size: 20px;
+}
+body .board-box div {
+  height: 150px;
+}
+body .board-box div p {
+  font-family: Coco-Sharp-Regular;
+  font-weight: 400;
+  font-size: 14px;
+}
+body .board-box span {
+  color: #acacac;
+  font-family: Coco-Sharp-Regular;
+  font-weight: 400;
+  font-size: 14px;
+}
+body .board-box img {
+  border-radius: 100%;
+}
+body .about {
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 30px 60px;
+  margin-bottom: 20px;
+}
+body .about div p {
+  font-family: Coco-Sharp-Regular;
+  font-weight: 400;
+  font-size: 14px;
+}
+body .about div p span {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+body .done-box {
+  background-color: #ff6400;
+  padding: 50px;
+  text-align: center;
+  border-radius: 15px;
+}
+body .done-box div {
+  margin-top: 20px;
+  height: 60px;
+}
+body .done-box div p {
+  font-family: Coco-Sharp-Bold;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
+body .our-values {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+body .our-values h4 {
+  font-family: Coco-Sharp-Bold;
+  font-weight: 700;
+  font-size: 20px;
+}
+body .our-values div {
+  height: 150px;
+}
+body .our-values div p {
+  font-family: Coco-Sharp-Regular;
+  font-weight: 400;
+  font-size: 14px;
+}
+body .internet-banking {
+  background-color: #ededed;
+  width: 100%;
+  height: 100vh;
+}
+body .internet-banking .ib-content {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+}
+body .internet-banking .ib-content .title {
+  margin-bottom: 20px;
+}
+body .internet-banking .ib-content .title .ib-logo img {
+  width: 117px;
+  height: 32px;
+}
+body .internet-banking .ib-content .title .ib-langs button {
+  background-color: transparent;
+  border: none;
+  border-radius: 2px;
+  color: #7c7c7c;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px;
+  transition: 0.2s;
+  font-family: Source-Sans-Pro-Regular;
+}
+body .internet-banking .ib-content .title .ib-langs button:hover {
+  background-color: #7c7c7c;
+  color: #ffffff;
+}
+body .internet-banking .ib-content .title .ib-langs .selected-lang {
+  border-bottom: #7c7c7c 1px solid;
+  font-family: Source-Sans-Pro-Bold;
+}
+body .internet-banking .ib-content .ib-div {
+  height: 700px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 5px;
+  position: relative;
+}
+body .internet-banking .ib-content .ib-div .ib-slide {
+  background-color: #fafafa;
+  padding: 70px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  position: relative;
+}
+body .internet-banking .ib-content .ib-div .ib-slide .slide-menu1, body .internet-banking .ib-content .ib-div .ib-slide .slide-menu2 {
+  position: absolute;
+  top: 15%;
+  left: -80%;
+  transition: transform 1.2s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+body .internet-banking .ib-content .ib-div .ib-slide .slide-menu1 div, body .internet-banking .ib-content .ib-div .ib-slide .slide-menu2 div {
+  width: 336px;
+}
+body .internet-banking .ib-content .ib-div .ib-slide .slide-menu1 .ib-text, body .internet-banking .ib-content .ib-div .ib-slide .slide-menu2 .ib-text {
+  height: 200px;
+}
+body .internet-banking .ib-content .ib-div .ib-slide .slide-menu1 h5, body .internet-banking .ib-content .ib-div .ib-slide .slide-menu2 h5 {
+  font-family: Source-Sans-Pro-Regular;
+  color: #3e3e3e;
+  font-size: 20px;
+  font-weight: 700;
+}
+body .internet-banking .ib-content .ib-div .ib-slide .slide-menu1 p, body .internet-banking .ib-content .ib-div .ib-slide .slide-menu2 p {
+  font-family: Source-Sans-Pro-Regular;
+  color: #9b9b9b;
+  font-size: 16px;
+  font-weight: 400;
+}
+body .internet-banking .ib-content .ib-div .ib-slide .dots {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body .internet-banking .ib-content .ib-div .ib-slide .dot1, body .internet-banking .ib-content .ib-div .ib-slide .dot2 {
+  cursor: pointer;
+}
+body .internet-banking .ib-content .ib-div .ib-register {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 80px 40px;
+}
+body .internet-banking .ib-content .ib-div .ib-register .entry {
+  font-family: Source-Sans-Pro-Regular;
+}
+body .internet-banking .ib-content .ib-div .ib-register .entry h6 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3f3f3f;
+}
+body .internet-banking .ib-content .ib-div .ib-register .entry a {
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+}
+body .internet-banking .ib-content .ib-div .ib-register .reg-options .qr-code {
+  width: 30%;
+}
+body .internet-banking .ib-content .ib-div .ib-register .reg-options .others {
+  width: 70%;
+}
+body .internet-banking .ib-content .ib-div .ib-register .reg-options .others p {
+  font-family: Source-Sans-Pro-Regular;
+  font-size: 16px;
+  color: #000000;
+}
+body .internet-banking .ib-content .ib-div .ib-register .reg-options .others > div {
+  border-radius: 5px;
+  border: 1px #d0d0d0 solid;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+body .internet-banking .ib-content .ib-div .ib-register .reg-options .others .act-div {
+  border: 1px #ff6400 solid !important;
+}
+body .internet-banking .ib-content .ib-div .ib-register .reg-options .others .act-div p {
+  border-bottom: 1px #ff6400 solid;
+}
+body .internet-banking .ib-content .ib-div .ib-register .reg-info {
+  background-color: #ededed;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+body .internet-banking .ib-content .ib-div .ib-register .reg-info p {
+  margin: 0 15px;
+  font-size: 14px;
+  font-family: Source-Sans-Pro-Regular;
+  color: #808080;
+}
+body .internet-banking .ib-content .ib-div .ib-register .reg-info i {
+  cursor: pointer;
+}
+body .internet-banking .ib-content .ib-div .ib-register .orange-border {
+  border-bottom: 3px #ff6400 solid !important;
+  transition: 0.2s ease-in-out;
+}
+body .internet-banking .ib-content .ib-div .ib-register .input-div {
+  border-bottom: 1px #d0d0d0 solid;
+  padding: 10px 0;
+}
+body .internet-banking .ib-content .ib-div .ib-register .input-div p {
+  font-family: Source-Sans-Pro-Regular;
+  font-size: 14px;
+  font-weight: 600;
+  color: #e28116;
+  margin-left: 30px;
+}
+body .internet-banking .ib-content .ib-div .ib-register .input-div span {
+  color: #969696;
+  font-family: Source-Sans-Pro-Bold;
+}
+body .internet-banking .ib-content .ib-div .ib-register .input-div i {
+  cursor: pointer;
+}
+body .internet-banking .ib-content .ib-div .ib-register .input-div input {
+  width: 85%;
+  border: none;
+  font-size: 20px;
+}
+body .internet-banking .ib-content .ib-div .ib-register .input-div input:focus {
+  border: none;
+  outline: none;
+}
+body .internet-banking .ib-content .ib-div .ib-register .input-div input::-webkit-outer-spin-button, body .internet-banking .ib-content .ib-div .ib-register .input-div input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+body .internet-banking .ib-content .ib-div .ib-register a {
+  color: #7977a1;
+  font-family: Source-Sans-Pro-Regular;
+  font-size: 17px;
+  font-weight: 400;
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+}
+body .internet-banking .ib-content .ib-div .ib-register .enter-code {
+  font-family: Source-Sans-Pro-Regular;
+  font-size: 14px;
+  font-weight: 600;
+  color: #e28116;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+body .internet-banking .ib-content .ib-div .ib-register button {
+  background-color: #ff6400;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body #shopping-cart img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+}
+body #shopping-cart .product {
+  cursor: pointer;
+  transition: 0.5s;
+}
+body #shopping-cart .product:hover img {
+  transform: scale(1.1);
+}
+body #shopping-cart .product .image-div {
+  overflow: hidden;
+}
+body #shopping-cart .product .image-div img {
+  transition: 0.6s;
+}
+body #shopping-cart h5 {
+  font-size: 14px;
+}
+body #shopping-cart span {
+  font-size: 14px !important;
+}
+body #shopping-cart button {
+  color: white;
+}
+body #shopping-cart .your-cart {
+  background-color: #fafafa;
+  color: #323232;
+  top: 14%;
+  z-index: 5;
+  border: #ff6400 2px solid;
+}
+body #shopping-cart .your-cart .title-cart {
+  background-color: #ff6400;
+  padding: 10px;
+}
+body #shopping-cart .your-cart h4 {
+  color: #ffffff;
+}
+body input[type=number]::-webkit-outer-spin-button,
+body input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.night-mode {
+  background-color: #000000;
+}
+.night-mode .header-bottom a, .night-mode .header-bottom h6, .night-mode .header-bottom p, .night-mode footer a, .night-mode footer h6, .night-mode footer p {
+  color: #ffffff !important;
+}
+.night-mode .empty-cart p {
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: Coco-Sharp-Regular;
+  src: url(/fonts/Coco-Sharp-Regular-trial.ttf);
+}
+@font-face {
+  font-family: Coco-Sharp-Bold;
+  src: url(/fonts/Coco-Sharp-Bold-trial.ttf);
+}
+@font-face {
+  font-family: Coco-Sharp-Extra-Bold;
+  src: url(/fonts/Coco-Sharp-Extrabold-trial.ttf);
+}
+@font-face {
+  font-family: Source-Sans-Pro-Regular;
+  src: url(/fonts/SourceSansPro-Regular.ttf);
+}
+@font-face {
+  font-family: Source-Sans-Pro-Bold;
+  src: url(/fonts/SourceSansPro-Bold.ttf);
+}
+@media only screen and (max-width: 991px) {
+  .header-top, .header-bottom {
+    display: none;
+  }
+  .mobile-header {
+    display: block !important;
+  }
+  .mf-none {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

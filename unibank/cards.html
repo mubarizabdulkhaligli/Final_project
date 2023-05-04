@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Unibank</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="container px-5">
+          <div class="row px-3">
+            <div class="col-lg-8 d-flex align-items-center">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="/images/logonew-orange1.png" alt="logo" />
+                </a>
+              </div>
+              <div class="navbar-menu">
+                <a href="#">F.A.Q</a>
+                <a href="/service-network.html">Xidmət şəbəkəsi</a>
+                <a href="#">Bank haqqında</a>
+                <a href="#">Keşbek</a>
+                <a href="#">Tariflər</a>
+                <a href="/hr.html">İnsan Resursları</a>
+                <a href="#">Bankla əlaqə və təkliflər</a>
+              </div>
+            </div>
+            <div class="col-lg-4 d-flex align-items-center">
+              <div class="banking-options d-flex me-3">
+                <button class="active">Fərdi</button>
+                <button>Biznes</button>
+              </div>
+              <button class="dark-mode me-3 mode-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-moon-stars-fill moon" viewBox="0 0 16 16">
+                  <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                  <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#323232" class="bi bi-brightness-high d-none sun" viewBox="0 0 16 16">
+                  <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                </svg>
+              </button>
+              <button class="me-3 langs">ENG</button>
+              <button class="me-3 langs">RUS</button>
+
+              <div class="cart-div">
+                <button class="me-3">
+                  <a href="/basket.html"><i class="fa-solid fa-cart-shopping" style="color: #ff6400;"></i></a>
+                </button>
+                <div class="count-adding-product d-none">
+                  <span class="count"></span>
+                </div>
+              </div>
+              
+
+              <button class="search-button">
+                <i
+                  class="fa-solid fa-magnifying-glass fa-flip-horizontal"
+                  style="color: #323232"
+                ></i>
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="searching d-none">
+        <div class="container">
+          <div class="row">
+            <div class="search-box">
+              <div class="d-flex justify-content-center align-items-center mt-5">
+                <i class="fa-solid fa-xmark fa-2xl close-button" style="color: #323232;"></i>
+              </div>
+              <div class="d-flex justify-content-center align-items-center my-5">
+                <h3>Axtarış</h3>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mb-5 inp-div m-auto">
+                <input type="text" class="w-100">
+                <button><i
+                  class="fa-solid fa-magnifying-glass fa-flip-horizontal"
+                  style="color: #ff6400"
+                ></i>
+              </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container px-5">
+          <div class="row py-4">
+            <div class="col-lg-9 d-flex align-items-center">
+              <a href="/cards.html">Kartlar</a>
+              <a href="#">Kreditlər</a>
+              <a href="#">Əmanətlər</a>
+              <a href="#">Köçürmələr</a>
+              <a href="#">Rəqəmsal bankçılıq</a>
+              <a href="#">Əlavə xidmətlər</a>
+            </div>
+
+            <div class="col-lg-3 buttons d-flex align-items-center">
+              <div class="me-2">
+                <a href="tel:117" class="call-center"><i class="fa-solid fa-phone me-2" style="color: #ff6b00"></i>117</a>
+              </div>
+              <div>
+                <a href="/internet-banking.html" target="_blank"><i class="fa-solid fa-circle-right me-2" style="color: #ff6b00"></i>İnternet bankçılıq</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-header">
+      <div class="container px-5">
+
+        <div class="row d-flex align-items-center justify-content-between py-3 position-relative">
+
+          <div class="col-4 col-lg-4 col-sm-4 col-md-4 d-flex justify-content-start align-items-center">
+            <button class="burger-menu">
+              <i class="fa-solid fa-bars-staggered" style="color: #323232;"></i>
+            </button>
+          </div>
+
+          <div class="col-4 col-lg-4 col-sm-4 col-md-4 d-flex justify-content-center align-items-center">
+            <a href="index.html">
+              <img src="/images/logonew-orange1.png" alt="logo" height="30px" width="30px"/>
+            </a>
+          </div>
+
+          <div class="col-4 col-lg-4 col-sm-4 col-md-4 d-flex justify-content-end align-items-center">
+            <div>
+              <a href="tel:117" class="call-center"><i class="fa-solid fa-phone me-2" style="color: #ff6b00"></i>117</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="opened-menu position-absolute d-flex justify-content-center w-100 d-none">
+          <div>
+            <div class="banking-options d-flex justify-content-center">
+              <button class="active">Fərdi</button>
+              <button>Biznes</button>
+            </div>
+            <div class="d-flex justify-content-center mh-top">
+              <a href="/cards.html">Kartlar</a>
+            </div>
+            <div class="d-flex justify-content-center mh-top">
+              <a href="#">Əmanətlər</a>
+            </div>
+            <div class="d-flex justify-content-center mh-top">
+              <a href="#">Köçürmələr</a>
+            </div>
+            <div class="d-flex justify-content-center mh-top">
+              <a href="#">Rəqəmsal bankçılıq</a>
+            </div>
+            <div class="d-flex justify-content-center mh-top">
+              <a href="#">Əlavə xidmətlər</a>
+            </div>
+            <div class="d-flex justify-content-center mh-bottom">
+              <a href="#">F.A.Q</a>
+            </div>
+            <div class="d-flex justify-content-center mh-bottom">
+              <a href="/service-network.html">Xidmət şəbəkəsi</a>
+            </div>
+            <div class="d-flex justify-content-center mh-bottom">
+              <a href="#">Bank haqqında</a>
+            </div>
+            <div class="d-flex justify-content-center mh-bottom">
+              <a href="#">Keşbek</a>
+            </div>
+            <div class="d-flex justify-content-center mh-bottom">
+              <a href="#">Tariflər</a>
+            </div>
+            <div class="d-flex justify-content-center mh-bottom">
+              <a href="/hr.html">İnsan Resursları</a>
+            </div>
+            <div class="d-flex justify-content-center mh-bottom">
+              <a href="#">Bankla əlaqə və təkliflər</a>
+            </div>
+
+            <div class="d-flex justify-content-between m-buttons align-items-center">
+
+              <button class="dark-mode me-3 mode-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-moon-stars-fill moon" viewBox="0 0 16 16">
+                  <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                  <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#323232" class="bi bi-brightness-high d-none sun" viewBox="0 0 16 16">
+                  <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                </svg>
+              </button>
+
+              <button class="search-button">
+                <i
+                  class="fa-solid fa-magnifying-glass fa-flip-horizontal"
+                  style="color: #323232"
+                ></i>
+              </button>
+
+              <button class="langs">ENG</button>
+
+              <button class="langs">RUS</button>
+
+              <div class="cart-div">
+                <button class="me-3">
+                  <a href="/basket.html"><i class="fa-solid fa-cart-shopping" style="color: #ff6400;"></i></a>
+                </button>
+                <div class="count-adding-product d-none">
+                  <span class="count"></span>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+      </div>
+    </header>
+
+        <div class="cards">
+            <div class="container px-5">
+                <div class="row">
+                    <h1>Kartlar</h1>
+
+                   <div id="" class="col-lg-12 d-flex align-items-center justify-content-between ucard-content">
+
+                    <div class="col-lg-3 ucard-photo">
+                        <img src="/images/o_1g04kl6mn107c1a6lc6btp4pfda.webp" alt="ucard">
+                    </div>
+
+                    <div class="col-lg-8">
+
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h2>UCard</h2>
+                            <button class="add-button">Ətraflı</button>
+                        </div>
+
+                        <div class="d-flex">
+                            <p>UCard - kredit və multivalyutalı debet kartını özündə birləşdirən tək kartdır.</p>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+
+                            <div class="ucard-info d-flex align-items-center">
+
+                                <div class="me-3">
+                                    <i class="fa-regular fa-credit-card fa-2xl" style="color: #ff6400;"></i>
+                                </div>
+
+                                <div>
+                                    <h6>Multivalyutalı</h6>
+                                    <h6>tək kart</h6>
+                                </div>   
+
+                            </div>
+
+                            <div class="ucard-info d-flex align-items-center">
+
+                                <div class="me-3">
+                                    <i class="fa-regular fa-hourglass-half fa-2xl" style="color: #ff6400;"></i>
+                                </div>
+
+                                <div>
+                                    <h6>40 günədək</h6>
+                                    <h6>faizsiz kredit</h6>
+                                </div>
+
+                            </div>
+
+                            <div class="ucard-info d-flex align-items-center">
+
+                                <div class="me-3">
+                                    <i class="fa-solid fa-arrows-rotate fa-2xl" style="color: #ff6400;"></i>
+                                </div>
+
+                                <div>
+                                    <h6>30%-dək</h6>
+                                    <h6>keşbek</h6>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                   </div>
+
+                   <h1>Debet kartlar</h1>
+
+                   <div class="debet-cards">
+
+                    <div class="row">
+
+                        <div class="col-lg-6 mb-4">
+
+                            <div id="card1" class="card-box">
+
+                                <div class="card-image">
+                                    <img src="/images/o_1fvf8egoctbh2n41il1sbd1crdi.jpg" alt="visa-platinum">
+                                </div>
+
+                                <div class="card-info">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h2>Visa Platinum</h2>
+                                        <h3>100 AZN</h3>
+                                    </div>
+                                    <p>Bu kartla hər zaman və hər yerdə yüksək statusunu vurğula! Böyük imkanlar vədd edən kartı həyatının əvəzolunmaz bir hissəsinə çevir.</p>
+                                </div>
+
+                                <div class="add-button">
+                                    <button class="add-to-cart"><i class="fa-solid fa-cart-plus fa-xl me-2" style="color: #ffffff;"></i>Əlavə et</button>
+                                </div>
+
+                            </div> 
+                        </div>
+
+                        <div class="col-lg-6 mb-4">
+                            <div id="card2" class="card-box">
+                                <div class="card-image">
+                                    <img src="/images/o_1fdhl5q9u2if7531bln1o1f68a.webp" alt="visa-infinite">
+                                </div>
+                                <div class="card-info">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h2>Visa Infinite</h2>
+                                        <h3>450 AZN</h3>
+                                    </div>
+                                    <p>Bu kartın sahibi olaraq, hər yerdə ən yaxşı xidmət və eksklüziv imkanlar səni gözləyir. Visa növündə olan bu kartdan olduqca fərqli faydalan.</p>
+                                </div>
+                                <div class="add-button">
+                                    <button class="add-to-cart"><i class="fa-solid fa-cart-plus fa-xl me-2" style="color: #ffffff;"></i>Əlavə et</button>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-lg-6 mb-4">
+                            <div id="card3" class="card-box">
+                                <div class="card-image">
+                                    <img src="/images/o_1fl3rf8fd1cfrl7d10js1vg81jd4a.webp" alt="unimiles">
+                                </div>
+                                <div class="card-info">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h2>Unimiles</h2>
+                                        <h3>100 AZN</h3>
+                                    </div>
+                                    <p>Uçuşa hazır ol! UniMiles kartı ilə nağdsız ödənişlər et, millər topla və milləri istənilən hava yollarının aviabiletinə dəyiş.</p>
+                                </div>
+                                <div class="add-button">
+                                    <button class="add-to-cart"><i class="fa-solid fa-cart-plus fa-xl me-2" style="color: #ffffff;"></i>Əlavə et</button>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-lg-6 mb-4">
+                            <div id="card4" class="card-box">
+                                <div class="card-image">
+                                    <img src="/images/o_1eqk202no1jcg2j11qivr8javla.webp" alt="mc-black-edition">
+                                </div>
+                                <div class="card-info">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h2>Mastercard Black Edition</h2>
+                                        <h3>450 AZN</h3>
+                                    </div>
+                                    <p>Bu kartı əldə etməklə geniş səyahət, sığorta və xidmət imkanlarına malik olursan. Sənin yüksək statusunu MasterCard-ın ən nüfuzlu kartlarından biri vurğulayır!</p>
+                                </div>
+                                <div class="add-button">
+                                    <button class="add-to-cart"><i class="fa-solid fa-cart-plus fa-xl me-2" style="color: #ffffff;"></i>Əlavə et</button>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div id="card5" class="card-box">
+                                <div class="card-image">
+                                    <img src="/images/o_1eqk20gao1app1l531oa285ffdta.webp" alt="mc-world-elite">
+                                </div>
+                                <div class="card-info">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h2>Mastercard World Elite</h2>
+                                        <h3>600 AZN</h3>
+                                    </div>
+                                    <p>Dünyanın istənilən yerində eksklüziv imkanlar və yüksək xidmət səni gözləyir! Arzularını bu karta həvalə et!</p>
+                                </div>
+                                <div class="add-button">
+                                    <button class="add-to-cart"><i class="fa-solid fa-cart-plus fa-xl me-2" style="color: #ffffff;"></i>Əlavə et</button>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-lg-6">
+                          <div id="card6" class="card-box">
+                              <div class="card-image">
+                                <img src="/images/o_1g04kl6mn107c1a6lc6btp4pfda.webp" alt="ucard">   
+                              </div>
+                              <div class="card-info">
+                                  <div class="d-flex justify-content-between align-items-center">
+                                      <h2>UCard</h2>
+                                      <h3>0 AZN</h3>
+                                  </div>
+                                  <p>UCard - kredit və multivalyutalı debet kartını özündə birləşdirən tək kartdır.</p>
+                              </div>
+                              <div class="add-button">
+                                  <button class="add-to-cart"><i class="fa-solid fa-cart-plus fa-xl me-2" style="color: #ffffff;"></i>Əlavə et</button>
+                              </div>
+                          </div> 
+                      </div>
+                    </div>
+                   </div>
+
+                   <h1>Digər</h1>
+
+                   <div class="other-cards debet-cards">
+
+                    <div class="row">
+
+                        <div class="col-lg-6 mb-4">
+                            <div id="card7" class="card-box">
+                                <div class="card-image">
+                                    <img src="/images/o_1ghgjt81a1i0rnkomn1vmh1iuda.webp" alt="visa-platinum">
+                                </div>
+                                <div class="card-info">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h2>Albalı Debet</h2>
+                                        <h3>50 AZN</h3>
+                                    </div>
+                                    <p>Bu kartla dünyanın hər bir nöqtəsində rahat alış-veriş, onlayn ödənişlər et və ya rahat nağd pul çıxar.</p>
+                                </div>
+                                <div class="add-button">
+                                    <button class="add-to-cart"><i class="fa-solid fa-cart-plus fa-xl me-2" style="color: #ffffff;"></i>Əlavə et</button>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-lg-6 mb-4">
+                            <div id="card8" class="card-box">
+                                <div class="card-image">
+                                    <img src="/images/o_1g5lkqkchjtp1ejd1tbn1igf17c8a (1).webp" alt="visa-infinite">
+                                </div>
+                                <div class="card-info">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h2>Albalı</h2>
+                                        <h3>20 AZN</h3>
+                                    </div>
+                                    <p>Albalı - dörd bank məhsulunu (kredit, taksit kartı, depozit və debet kartı) özündə birləşdirən beynəlxalq kartdır.</p>
+                                </div>
+                                <div class="add-button">
+                                    <button class="add-to-cart"><i class="fa-solid fa-cart-plus fa-xl me-2" style="color: #ffffff;"></i>Əlavə et</button>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-lg-6 mb-4">
+                            <div id="card9" class="card-box">
+                                <div class="card-image">
+                                    <img src="/images/o_1geemnr0j10bv12dqj8r6f016qea.webp" alt="unimiles">
+                                </div>
+                                <div class="card-info">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h2>UCard Gift</h2>
+                                        <h3>100 AZN</h3>
+                                    </div>
+                                    <p>UCard Gift-ən çox arzulanan hədiyyə! UCard Gift kartını hədiyyə et!</p>
+                                </div>
+                                <div class="add-button">
+                                    <button class="add-to-cart"><i class="fa-solid fa-cart-plus fa-xl me-2" style="color: #ffffff;"></i>Əlavə et</button>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-lg-6 mb-4">
+                            <div id="card10" class="card-box">
+                                <div class="card-image">
+                                    <img src="/images/o_1g4runv8p1phn1o0p1f1ager1niia.jpg" alt="mc-black-edition">
+                                </div>
+                                <div class="card-info">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h2>Digital card</h2>
+                                        <h3>0 AZN</h3>
+                                    </div>
+                                    <p>Artıq kart sifarişi üçün banka gəlməyə ehtiyac yoxdur. Bu kart ilə hesab açmadan UBank-da, müxtəlif İnternet saytlarda bütün ödənişlərini rahatlıqla edə bilərsən.</p>
+                                </div>
+                                <div class="add-button">
+                                    <button class="add-to-cart"><i class="fa-solid fa-cart-plus fa-xl me-2" style="color: #ffffff;"></i>Əlavə et</button>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="alertbox">
+                          <span></span>
+                        </div>
+
+                   </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+          <div class="container px-5">
+            <div class="row">
+              <div class="col-lg-6 mb-5 mf-none">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <h6>Kartlar</h6>
+                    <ul>
+                      <li>
+                        <a href="/cards.html">Kartlar</a>
+                      </li>
+                      <li>
+                        <a href="/cards.html">Debet kartlar</a>
+                      </li>
+                      <li>
+                        <a href="/cards.html">Digər</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-3">
+                    <h6>Kreditlər</h6>
+                    <ul>
+                      <li>
+                        <a href="">Nağd</a>
+                      </li>
+                      <li>
+                        <a href="">Mikro</a>
+                      </li>
+                      <li>
+                        <a href="">İpoteka</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-3">
+                    <h6>Əmanətlər</h6>
+                    <ul>
+                      <li>
+                        <a href="">Müddətli</a>
+                      </li>
+                      <li>
+                        <a href="">Proqressiv</a>
+                      </li>
+                      <li>
+                        <a href="">Yığım</a>
+                      </li>
+                      <li>
+                        <a href="">Faizlər əvvəlcədən</a>
+                      </li>
+                      <li>
+                        <a href="">Topla</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-3">
+                    <h6>Köçürmələr</h6>
+                    <ul>
+                      <li>
+                        <a href="">Ölkəxarici</a>
+                      </li>
+                      <li>
+                        <a href="">Ölkədaxili</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+              <div class="col-lg-6 mb-5 mf-none">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <h6>Rəqəmsal bankçılıq</h6>
+                    <ul>
+                      <li>
+                        <a href="">UBank</a>
+                      </li>
+                      <li>
+                        <a href="">İnternet bankçılıq</a>
+                      </li>
+                      <li>
+                        <a href="">Şəxsi kabinet</a>
+                      </li>
+                      <li>
+                        <a href="">Unimiles şəxsi kabinet</a>
+                      </li>
+                      <li>
+                        <a href="">Onlayn kredit ödənişi</a>
+                      </li>
+                      <li>
+                        <a href="">Onlayn kredit müraciəti</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4">
+                    <h6>Əlavə xidmətlər</h6>
+                    <ul>
+                      <li>
+                        <a href="">Hesablaşma-kassa xidməti</a>
+                      </li>
+                      <li>
+                        <a href="">POS terminal / Smart kassa</a>
+                      </li>
+                      <li>
+                        <a href="">Depozit qutuları</a>
+                      </li>
+                      <li>
+                        <a href="">Onlayn ticarət (eCommerce)</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4">
+                    <h6>Bank haqqında</h6>
+                    <ul>
+                      <li>
+                        <a href="">Rəhbərlik</a>
+                      </li>
+                      <li>
+                        <a href="">Müxbir hesablar</a>
+                      </li>
+                      <li>
+                        <a href="">Təklif və Şikayətlər</a>
+                      </li>
+                      <li>
+                        <a href="">İnsan resursları</a>
+                      </li>
+                      <li>
+                        <a href="">Hesabatlar</a>
+                      </li>
+                      <li>
+                        <a href="">Digər sənədlər</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="icons d-flex gap-4 align-items-center">
+                <div class="icon d-flex align-items-center justify-content-center orange-div">
+                  <i class="fa-brands fa-apple" style="color: #ffffff;"></i>
+                </div>
+                <div class="icon d-flex align-items-center justify-content-center orange-div">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-android2" viewBox="0 0 16 16">
+                    <path d="m10.213 1.471.691-1.26c.046-.083.03-.147-.048-.192-.085-.038-.15-.019-.195.058l-.7 1.27A4.832 4.832 0 0 0 8.005.941c-.688 0-1.34.135-1.956.404l-.7-1.27C5.303 0 5.239-.018 5.154.02c-.078.046-.094.11-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.697 3.697 0 0 0 3.5 5.02h9c0-.75-.208-1.44-.623-2.072a4.266 4.266 0 0 0-1.664-1.476ZM6.22 3.303a.367.367 0 0 1-.267.11.35.35 0 0 1-.263-.11.366.366 0 0 1-.107-.264.37.37 0 0 1 .107-.265.351.351 0 0 1 .263-.11c.103 0 .193.037.267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264Zm4.101 0a.351.351 0 0 1-.262.11.366.366 0 0 1-.268-.11.358.358 0 0 1-.112-.264c0-.103.037-.191.112-.265a.367.367 0 0 1 .268-.11c.104 0 .19.037.262.11a.367.367 0 0 1 .107.265c0 .102-.035.19-.107.264ZM3.5 11.77c0 .294.104.544.311.75.208.204.46.307.76.307h.758l.01 2.182c0 .276.097.51.292.703a.961.961 0 0 0 .7.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182c0 .276.097.51.292.703a.972.972 0 0 0 .71.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76c.291 0 .54-.103.749-.308.207-.205.311-.455.311-.75V5.365h-9v6.404Zm10.495-6.587a.983.983 0 0 0-.702.278.91.91 0 0 0-.293.685v4.063c0 .271.098.501.293.69a.97.97 0 0 0 .702.284c.28 0 .517-.095.712-.284a.924.924 0 0 0 .293-.69V6.146a.91.91 0 0 0-.293-.685.995.995 0 0 0-.712-.278Zm-12.702.283a.985.985 0 0 1 .712-.283c.273 0 .507.094.702.283a.913.913 0 0 1 .293.68v4.063a.932.932 0 0 1-.288.69.97.97 0 0 1-.707.284.986.986 0 0 1-.712-.284.924.924 0 0 1-.293-.69V6.146c0-.264.098-.491.293-.68Z"/>
+                  </svg>
+                </div>
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                </div>
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                </div>
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                </div>
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                </div>
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                </div>
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <i class="fa-brands fa-telegram" style="color: #ffffff;"></i>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-between py-4">
+                <div class="copyright col-lg-8">
+                  <p class="cr-top">© 2023, Unibank - Sənin Bankın</p>
+                  <p class="cr-bottom">Unibank Azərbaycan Respublikası Mərkəzi Bankının 73 saylı 14 dekabr 2010-cu il tarixli lisenziyası əsasında fəaliyyət göstərir.</p>
+                  <p class="cr-bottom">Bütün hüquqlar qorunur.</p>
+                </div>
+                <div class="logos col-lg-4 d-flex align-items-center justify-content-between ">
+                    <a href="">
+                      <img src="/images/adif.png" alt="">
+                    </a>
+                    <a href="">
+                      <img src="/images/Elektron-hokumet-1.jpg" alt="">
+                    </a>
+                    <a href="">
+                      <img src="/images/infobank.png" alt="">
+                    </a>
+                    <a href="">
+                      <img src="/images/msp.png" alt="">
+                    </a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </footer>
+
+    <script src="/basket.js"></script>
+    <script src="app.js"></script>
+
+  </body>
+</html>
